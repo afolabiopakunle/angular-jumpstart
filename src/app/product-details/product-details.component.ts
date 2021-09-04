@@ -19,5 +19,10 @@ export class ProductDetailsComponent implements OnInit {
 
   product: Product | undefined;
 
+  addToCart(product) {
+    this.cartService.addToCart(product);
+    window.alert('Your product has been added to cart');
+  }
+
   constructor(private route: ActivatedRoute, private cartService: CartService) {}
 }
