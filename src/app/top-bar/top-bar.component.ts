@@ -10,7 +10,7 @@ export class TopBarComponent {
 
   constructor(private cartService: CartService ) {}
 
-  itemNumber = this.cartService.getItems.length
+  itemNumber = this.cartService.itemsNumber
 
 }
 

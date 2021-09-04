@@ -8,10 +8,12 @@ import { Product } from './products'
 export class CartService {
 
   items: Product[] = [];
+  itemsNumber: number = 0;
   constructor() { }
 
   addToCart(product: Product) {
     this.items.push(product)
+    this.itemsNumber++
   }
 
   getItems() {

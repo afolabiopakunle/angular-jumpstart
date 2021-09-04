@@ -2,7 +2,7 @@
   <h1>My Store</h1>
 </a>
 
-<a class="button fancy-button" [routerLink]="['cart']"><i class="material-icons">shopping_cart</i>Checkout {{ itemNumber}}</a>
+<a class="button fancy-button" [routerLink]="['cart']"><i class="material-icons">shopping_cart</i>Checkout {{ itemNumber > 0 ? itemNumber : itemNumber}}</a>
 
 <!-- 
 Copyright Google LLC. All Rights Reserved.
