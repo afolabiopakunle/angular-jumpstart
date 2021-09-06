@@ -13,7 +13,7 @@ export class CartService {
 
   addToCart(product: Product) {
     this.items.push(product)
-    this.itemsNumber++
+    this.itemsNumber = this.itemsNumber + 1
   }
 
   getItems() {
